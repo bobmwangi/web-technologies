@@ -15,12 +15,27 @@ include "header.php";
 <!-- ======= Sliders ======= -->
 <section id="hero" class="d-flex justify-cntent-center align-items-center">
     <div id="heroCarousel" data-bs-interval="5000" class="container carousel carousel-fade" data-bs-ride="carousel">
+
+        <?php
+        $ReadSL = "SELECT * FROM sliders WHERE id= '1'";
+        $resSL = mysqli_query($conn, $ReadSL);
+
+        while ($rowSL = mysqli_fetch_assoc($resSL)) {
+            $id = $rowSL['id'];
+            $st1 = $rowSL['slider_1_title'];
+            $sd1 = $rowSL['slider_1_description'];
+            $st2 = $rowSL['slider_2_title'];
+            $sd2 = $rowSL['slider_2_description'];
+            $st3 = $rowSL['slider_3_title'];
+            $sd3 = $rowSL['slider_3_description'];
+        }
+        ?>
+
         <!-- Slide 1 -->
         <div class="carousel-item active">
             <div class="carousel-container">
-                <h2 class="animate__animated animate__fadeInDown">Welcome to <span>to SCIT</span></h2>
-                <p class="animate__animated animate__fadeInUp">The go-to School of Computing and Information
-                    Technology</p>
+                <h2 class="animate__animated animate__fadeInDown"><?php echo $st1; ?></h2>
+                <p class="animate__animated animate__fadeInUp"><?php echo $sd1; ?></p>
                 <a href="about.php" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>
             </div>
         </div>
@@ -28,9 +43,8 @@ include "header.php";
         <!-- Slide 2 -->
         <div class="carousel-item">
             <div class="carousel-container">
-                <h2 class="animate__animated animate__fadeInDown">Short Courses</h2>
-                <p class="animate__animated animate__fadeInUp">Get to do short courses to boost your skill level in
-                    IT.</p>
+                <h2 class="animate__animated animate__fadeInDown"><?php echo $st2; ?></h2>
+                <p class="animate__animated animate__fadeInUp"><?php echo $sd2; ?></p>
                 <a href="academics.php" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read
                     More</a>
             </div>
@@ -39,8 +53,8 @@ include "header.php";
         <!-- Slide 3 -->
         <div class="carousel-item">
             <div class="carousel-container">
-                <h2 class="animate__animated animate__fadeInDown">Upcoming IT Conference</h2>
-                <p class="animate__animated animate__fadeInUp">Call for Abstracts. The deadline is 30 April 2022</p>
+                <h2 class="animate__animated animate__fadeInDown"><?php echo $st3; ?></h2>
+                <p class="animate__animated animate__fadeInUp"><?php echo $sd3; ?></p>
             </div>
         </div>
 

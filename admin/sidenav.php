@@ -19,13 +19,14 @@
                     <span class="link-title">Home</span>
                 </a>
             </li>
-            <li class="nav-item nav-category">Pages</li>
             <li class="nav-item">
-                <a href="applications.php" class="nav-link">
+                <a href="sliders.php" class="nav-link">
                     <i class="link-icon fa fa-tv"></i>
-                    <span class="link-title">Applications</span>
+                    <span class="link-title">Slider</span>
                 </a>
             </li>
+            <li class="nav-item nav-category">Pages</li>
+
             <li class="nav-item">
                 <a href="about.php" class="nav-link">
                     <i class="link-icon fa fa-info"></i>
@@ -48,6 +49,12 @@
                 <a href="staff.php" class="nav-link">
                     <i class="link-icon fa fa-user"></i>
                     <span class="link-title">Staff</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="applications.php" class="nav-link">
+                    <i class="link-icon fa fa-tv"></i>
+                    <span class="link-title">Applications</span>
                 </a>
             </li>
             <li class="nav-item nav-category">Other content</li>

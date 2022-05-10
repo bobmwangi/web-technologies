@@ -73,7 +73,8 @@ while ($rowRD = mysqli_fetch_assoc($resRD)) {
 
                     <li>
                         <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse"
-                                                                       data-bs-target="#faq-list-2" class="collapsed"><?php echo $q2; ?><i
+                                                                       data-bs-target="#faq-list-2"
+                                                                       class="collapsed"><?php echo $q2; ?><i
                                     class="bx bx-chevron-down icon-show"></i><i
                                     class="bx bx-chevron-up icon-close"></i></a>
                         <div id="faq-list-2" class="collapse" data-bs-parent=".faq-list">
@@ -83,7 +84,8 @@ while ($rowRD = mysqli_fetch_assoc($resRD)) {
 
                     <li>
                         <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse"
-                                                                       data-bs-target="#faq-list-3" class="collapsed"><?php echo $q3; ?><i
+                                                                       data-bs-target="#faq-list-3"
+                                                                       class="collapsed"><?php echo $q3; ?><i
                                     class="bx bx-chevron-down icon-show"></i><i
                                     class="bx bx-chevron-up icon-close"></i></a>
                         <div id="faq-list-3" class="collapse" data-bs-parent=".faq-list">

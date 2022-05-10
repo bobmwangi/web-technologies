@@ -31,11 +31,15 @@
                 </div>
                 <div class="col-lg-4 col-md-6 footer-info">
                     <h3>About The Department of SCIT</h3>
-                    <p>The School of Computing and Information Technology (SCIT) was established in 1998, before then
-                        programs related to computer science were being run under the Faculty of Science in the
-                        department of Mathematics. started off with Bachelor of Science in Computer Science program but
-                        a year later it started also offering the Bachelor of Science in Computer Technology program.
-                        .</p>
+                    <?php
+                    $Read111 = "SELECT * FROM about_page WHERE id= '1'";
+                    $res111 = mysqli_query($conn, $Read111);
+
+                    while ($row111 = mysqli_fetch_assoc($res111)) {
+                        $msg_director1 = $row111['message_from_director'];
+                    }
+                    ?>
+                    <p><?php echo $msg_director1; ?></p>
                     <div class="social-links mt-3">
                         <a href="https://twitter.com" class="twitter"><i class="bx bxl-twitter"></i></a>
                         <a href="https://fb.com" class="facebook"><i class="bx bxl-facebook"></i></a>

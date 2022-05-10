@@ -109,13 +109,13 @@ if (isset($_SESSION['admin_email'])) {
                                     <h5 class="text-muted font-weight-normal mb-4">Log in to your account.</h5>
                                     <form action="" method="POST" class="forms-sample">
                                         <div class="form-group">
-                                            <label for="exampleInputEmail1">Email address</label>
+                                            <label for="exampleInputEmail1">Email address (admin)</label>
                                             <input type="text" name="email" value="<?php echo $email; ?>"
                                                    class="form-control" id="exampleInputEmail1"
                                                    placeholder="Email">
                                         </div>
                                         <div class="form-group">
-                                            <label for="exampleInputPassword1">Password</label>
+                                            <label for="exampleInputPassword1">Password (admin)</label>
                                             <input type="password" name="password" class="form-control"
                                                    id="exampleInputPassword1"
                                                    autocomplete="current-password" placeholder="Password">
