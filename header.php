@@ -21,28 +21,31 @@
 
         <nav id="navbar" class="navbar">
             <ul>
-                <li><a class="nav-link <?php if ($page=='home') {
+                <li><a class="nav-link <?php if ($page == 'home') {
                         echo "active";
                     } ?>" href="index.php">Home</a></li>
-                <li><a class="nav-link <?php if ($page=='about') {
+                <li><a class="nav-link <?php if ($page == 'about') {
                         echo "active";
                     } ?>" href="about.php">About</a></li>
-                <li><a class="nav-link <?php if ($page=='academics') {
+                <li><a class="nav-link <?php if ($page == 'academics') {
                         echo "active";
                     } ?>" href="academics.php">Academics</a></li>
-                <li><a class="nav-link <?php if ($page=='staff') {
+                <li><a class="nav-link <?php if ($page == 'staff') {
                         echo "active";
                     } ?>" href="staff.php">Staff</a></li>
-                <li><a class="nav-link <?php if ($page=='apply') {
+                <li><a class="nav-link <?php if ($page == 'apply') {
                         echo "active";
                     } ?>" href="apply.php">Apply now</a></li>
-                <li><a class="nav-link <?php if ($page=='payments') {
+                <li><a class="nav-link <?php if ($page == 'payments') {
                         echo "active";
                     } ?>" href="payments.php">Payments</a></li>
-                <li><a class="nav-link <?php if ($page=='contacts') {
+                <li><a class="nav-link <?php if ($page == 'contacts') {
                         echo "active";
                     } ?>" href="contacts.php">Contacts</a></li>
                 <li><a target="_blank" href="admin">Admin Login</a></li>
+                <li><a target="_blank"
+                       href="https://github.com/bobmwangi/web-technologies/blob/9bc6e69a46fe7ed98a889e670011a11a30a02438/Website%20Documentation%20-%20Kelvin%20Mwangi%20Gathii%20SCT313-1181-2021.pdf">Documentation</a>
+                </li>
             </ul>
             <i class="bi bi-list mobile-nav-toggle"></i>
         </nav><!-- .navbar -->
